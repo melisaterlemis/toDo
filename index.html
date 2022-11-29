@@ -23,20 +23,14 @@
       <div class="card">
         <div class="card-header">
           <h2>YAPILACAKLAR</h2>
-          <i class="far fa-square"></i>
+          <i id="todo-filter" class="far fa-square"></i>
         </div>
         <div class="card-body">
-          <ul class="todo-list" id="todo-list">
-            <div class="div todo-item">
-              <li>Ders Çalış</li>
-              <i class="fas fa-square"></i>
-              <i class="fas fa-trash-alt"></i>
-            </div>
-          </ul>
+          <ul data-filter="0" class="todo-list" id="todo-list"></ul>
         </div>
         <div class="card-footer">
           <input type="text" id="todo-input" placeholder="yeni yapılacaklar" />
-          <button id="todo-buton"><i class="fas fa-plus"></i></button>
+          <button id="todo-button"><i class="fas fa-plus"></i></button>
         </div>
       </div>
     </div>

@@ -50,4 +50,74 @@ body::after {
   display: flex;
   align-items: center;
   padding: 10px 0;
+  border-bottom: 3px solid #ff4f81;
+}
+.card-header i {
+  margin-left: auto;
+  cursor: pointer;
+}
+.card-body {
+  padding: 0px 0;
+  height: 600px;
+  overflow-x: scroll;
+}
+.todo-list {
+  list-style: none;
+}
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+.todo-item li {
+  flex-grow: 1;
+  font-size: 14px;
+  cursor: default;
+}
+.todo-item i {
+  font-size: 17px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.card-footer {
+  padding: 10px 0;
+  display: flex;
+}
+.card-footer input {
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.card-footer input:focus,
+.card-footer button:focus {
+  outline: 0;
+}
+.card-footer button {
+  background-color: #ff4f81;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  width: 60px;
+  border-radius: 0px 5px 5px 0px;
+}
+.card-footer button:hover {
+  background-color: #ff6793;
+}
+.todo {
+  display: flex;
+}
+.done {
+  background-color: rgba(0, 0, 0, 0.5);
 }
